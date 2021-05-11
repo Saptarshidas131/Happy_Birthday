@@ -17,7 +17,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:fontFamily="sans-serif-light"
-        android:text="Happy Birthday, Friend"
+        android:text="@string/happy_birthday_text"
         android:textColor="@android:color/black"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,9 +33,21 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-light"
-        android:text="From, SD"
+        android:text="@string/from_text"
         android:textColor="@android:color/black"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="553dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/cake" />
 </androidx.constraintlayout.widget.ConstraintLayout>
